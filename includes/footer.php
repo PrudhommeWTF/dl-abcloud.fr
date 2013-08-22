@@ -9,10 +9,12 @@
 ?>
 <hr>
 <!-- FOOTER -->
-    <footer>
-        <p class="pull-right"><a href="#">Retour en haut</a></p>
-        <p><?php echo $appName.' '.$version; ?> &copy; 2013 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+<footer>
+    <p class="pull-right"><a href="#">Retour en haut</a></p>
+
+    <p><?php echo $appName . ' ' . $version; ?> &copy; 2013 &middot; <a href="#">Privacy</a> &middot; <a
+            href="#">Terms</a></p>
+</footer>
 </div><!-- /.container -->
 <!-- Bootstrap core JavaScript
 ================================================== -->

@@ -8,10 +8,13 @@
  */
 
 //si le nom et prénom son vide, afficher une alerte qui demande de se rendre dans /user/profile.php pour faire le changement
-if(empty($data->userFName) || empty($data->userSName)){
+if (empty($data->userFName) || empty($data->userSName)) {
     ?>
     <div class="alert text-center">
-        <strong>Attention !</strong><p>Vous n'avez pas encore défini votre prénom et votre nom. Merci de vous rendre dans la configuration de votre profil pour faire le nécessaire.</p>
+        <strong>Attention !</strong>
+
+        <p>Vous n'avez pas encore défini votre prénom et votre nom. Merci de vous rendre dans la configuration de votre
+            profil pour faire le nécessaire.</p>
         <a class="btn btn-primary" href="/user/profil.php">Configuration de votre profil</a>
     </div>
 <?php

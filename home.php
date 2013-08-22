@@ -10,6 +10,19 @@
 include 'includes/sessionCheck.php';
 include 'includes/header.php';
 include 'includes/namesCheck.php';
+
+//breadcrumb - where am I ?
+
+?>
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">1er sous dossier</a></li>
+        <li class="active">Sous dossier actuel</li>
+    </ol>
+<?php
+
+//list content directory
+
 ?>
 
 <?php

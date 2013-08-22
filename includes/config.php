@@ -23,18 +23,18 @@ $database = array(
 );
 
 // database server connection
-if($env == 'dev'){
+if ($env == 'dev') {
     $tmpSession = 0;
-    $version.=" <b style='color: red;'>dev</b>";
+    $version .= " <b style='color: red;'>dev</b>";
     try {
-        $bdd = new PDO('mysql:host='.$database['server'].';dbname='.$database['dbname'], $database['username'], $database['password']);
+        $bdd = new PDO('mysql:host=' . $database['server'] . ';dbname=' . $database['dbname'], $database['username'], $database['password']);
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
     $utf8 = $bdd->query("SET NAMES UTF8") or die (print_r($bdd->errorInfo()));
-} elseif ($env == 'test'){
-    $tmpSession = time()+60*60;
-    $version.=" <b style='color: red;'>test</b>";
-} elseif ($emp == 'prod'){
-    $tmpSession = time()+60*60;
+} elseif ($env == 'test') {
+    $tmpSession = time() + 60 * 60;
+    $version .= " <b style='color: red;'>test</b>";
+} elseif ($emp == 'prod') {
+    $tmpSession = time() + 60 * 60;
 }

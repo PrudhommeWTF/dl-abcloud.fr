@@ -8,7 +8,7 @@
  */
 
 //session check
-if(empty($_COOKIE['sessionStat']) || empty($_COOKIE['sessionName'])){
+if (empty($_COOKIE['sessionStat']) || empty($_COOKIE['sessionName'])) {
     $url = '/index.php';
-    header('Location: '.$url);
+    header('Location: ' . $url);
 }
