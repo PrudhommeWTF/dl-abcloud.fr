@@ -38,30 +38,3 @@ if ($env == 'dev') {
 } elseif ($emp == 'prod') {
     $tmpSession = time() + 60 * 60;
 }
-
-//managed files extensions
-$knownExt = array(
-    'css' => 'Feuille de style',
-    'doc' => 'Microsoft Word',
-    'docx' => 'Microsoft Word',
-    'flv' => 'Fichier FLV',
-    'gif' => 'Image GIF',
-    'html' =>'Page web',
-    'jpeg' => 'Image JPEG',
-    'jpg' => 'Image JPEG',
-    'mov' => 'Fichier MOV',
-    'mp4' => 'Fichier MP4',
-    'mpeg' => 'Fichier MPEG',
-    'pdf' => 'Adobe Acrobat',
-    'php' => 'Script PHP',
-    'png' => 'Image PNG',
-    'ppt' => 'Microsoft Power Point',
-    'pptx' => 'Microsoft Power Point',
-    'rar' => 'Archive WinRar',
-    'swf' => 'Fichier SWF',
-    'txt' => 'Document texte',
-    'wmv' => 'Fichier WMV',
-    'xls' => 'Microsoft Excel',
-    'xlsx' => 'Microsoft Excel',
-    'zip' => 'Archive WinZip'
-);

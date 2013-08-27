@@ -39,7 +39,8 @@ require_once 'config.php';
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="<?php if (isset($_COOKIE['sessionStat']) && $_COOKIE['sessionStat'] == md5('logged')) {
+            <a class="navbar-brand"
+               href="<?php if (isset($_COOKIE['sessionStat']) && $_COOKIE['sessionStat'] == md5('logged')) {
                    echo '/home.php';
                } else {
                    echo '/';
@@ -70,13 +71,17 @@ require_once 'config.php';
                             ?>
                             <li><a href="/register.php">S'enregistrer</a></li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Se connecter <strong class="caret"></strong></a>
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Se connecter <strong
+                                        class="caret"></strong></a>
 
                                 <div class="dropdown-menu" style="padding: 15px;">
                                     <form method="post" action="/login.php" accept-charset="UTF-8">
-                                        <input class="loginInput" type="text" placeholder="Votre email" id="mail" name="login[mail]">
-                                        <input class="loginInput" type="password" placeholder="Votre mot de passe" id="password" name="login[password]">
-                                        <input class="btn btn-primary btn-block" type="submit" id="sign-in" name="login[submit]" value="Me connecter">
+                                        <input class="loginInput" type="text" placeholder="Votre email" id="mail"
+                                               name="login[mail]">
+                                        <input class="loginInput" type="password" placeholder="Votre mot de passe"
+                                               id="password" name="login[password]">
+                                        <input class="btn btn-primary btn-block" type="submit" id="sign-in"
+                                               name="login[submit]" value="Me connecter">
                                     </form>
                                 </div>
                             </li>
@@ -84,13 +89,25 @@ require_once 'config.php';
                         } else {
                             ?>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" ata-toggle="dropdown">Bienvenue, <?php if (!empty($data->userFName)) { echo urldecode($data->userFName); } else { echo $data->userMail; } ?> <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle"
+                                   data-toggle="dropdown">Bienvenue, <?php if (!empty($data->userFName)) {
+                                        echo urldecode($data->userFName);
+                                    } else {
+                                        echo $data->userMail;
+                                    } ?> <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/user/profil.php"><span class="glyphicon glyphicon-user navbar-icons"></span> Votre profil</a></li>
-                                    <li><a href="/user/preferences.php"><span class="glyphicon glyphicon-cog navbar-icons"></span> Vos préférences</a></li>
-                                    <li><a href="/help/support"><span class="glyphicon glyphicon-envelope navbar-icons"></span> Contacter le support</a></li>
+                                    <li><a href="/user/profil.php"><span
+                                                class="glyphicon glyphicon-user navbar-icons"></span> Votre profil</a>
+                                    </li>
+                                    <li><a href="/user/preferences.php"><span
+                                                class="glyphicon glyphicon-cog navbar-icons"></span> Vos préférences</a>
+                                    </li>
+                                    <li><a href="/help/support"><span
+                                                class="glyphicon glyphicon-envelope navbar-icons"></span> Contacter le
+                                            support</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/logout.php"><span class="glyphicon glyphicon-off navbar-icons"></span> Déconnexion</a></li>
+                                    <li><a href="/logout.php"><span class="glyphicon glyphicon-off navbar-icons"></span>
+                                            Déconnexion</a></li>
                                 </ul>
                             </li>
                         <?php
@@ -101,22 +118,33 @@ require_once 'config.php';
                 } elseif ($_SERVER['PHP_SELF'] == '/home.php' || $_SERVER['PHP_SELF'] == '/upload.php' || $_SERVER['PHP_SELF'] == '/user/profil.php' || $_SERVER['PHP_SELF'] == '/user/preferences.php') {
                     ?>
                     <ul class="nav navbar-nav">
-                        <li <?php if ($_SERVER['PHP_SELF'] == '/home.php') { echo 'class="active"'; } ?>><a href="/home.php">Mes dossiers</a></li>
-                        <li <?php if ($_SERVER['PHP_SELF'] == '/upload.php') { echo 'class="active"'; } ?>><a href="/upload.php">Importer des fichiers</a></li>
+                        <li <?php if ($_SERVER['PHP_SELF'] == '/home.php') {
+                            echo 'class="active"';
+                        } ?>><a href="/home.php">Mes dossiers</a></li>
+                        <li <?php if ($_SERVER['PHP_SELF'] == '/upload.php') {
+                            echo 'class="active"';
+                        } ?>><a href="/upload.php">Importer des fichiers</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bienvenue, <?php if (!empty($data->userFName)) {
+                            <a href="#" class="dropdown-toggle"
+                               data-toggle="dropdown">Bienvenue, <?php if (!empty($data->userFName)) {
                                     echo urldecode($data->userFName);
                                 } else {
                                     echo $data->userMail;
                                 } ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/user/profil.php"><span class="glyphicon glyphicon-user navbar-icons"></span> Votre profil</a></li>
-                                <li><a href="/user/preferences.php"><span class="glyphicon glyphicon-cog navbar-icons"></span> Vos préférences</a></li>
-                                <li><a href="/help/support"><span class="glyphicon glyphicon-envelope navbar-icons"></span> Contacter le support</a></li>
+                                <li><a href="/user/profil.php"><span
+                                            class="glyphicon glyphicon-user navbar-icons"></span> Votre profil</a></li>
+                                <li><a href="/user/preferences.php"><span
+                                            class="glyphicon glyphicon-cog navbar-icons"></span> Vos préférences</a>
+                                </li>
+                                <li><a href="/help/support"><span
+                                            class="glyphicon glyphicon-envelope navbar-icons"></span> Contacter le
+                                        support</a></li>
                                 <li class="divider"></li>
-                                <li><a href="/logout.php"><span class="glyphicon glyphicon-off navbar-icons"></span>Déconnexion</a></li>
+                                <li><a href="/logout.php"><span class="glyphicon glyphicon-off navbar-icons"></span>
+                                        Déconnexion</a></li>
                             </ul>
                         </li>
                     </ul>
