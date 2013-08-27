@@ -22,8 +22,8 @@ if ($result == 1) {
     $pwdResult = $pwdCheck->rowCount(PDO::FETCH_OBJ);
     if ($pwdResult == 1) {
         $logMd5 = md5('logged');
-        setcookie('sessionStat', $logMd5, $tmpSession, null, null, false, true);
-        setcookie('sessionName', $userUID, $tmpSession, null, null, false, true);
+        setcookie('sessionStat', $logMd5, $tmpSession);
+        setcookie('sessionName', $userUID, $tmpSession);
         $url = 'home.php';
         header('Location: ' . $url);
     } else {
