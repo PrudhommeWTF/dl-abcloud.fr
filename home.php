@@ -54,7 +54,7 @@ include 'includes/namesCheck.php';
             }
             ?>
         </ol>
-        <div class="well">
+        <div class="well" id="personalContent">
             <table class="table table-hover">
                 <thead>
                 <tr>
@@ -87,12 +87,33 @@ include 'includes/namesCheck.php';
                                 <a href="?a=archive&f=<?php echo rawurlencode($currentFolder."/".$element['nom']); ?>" style="text-decoration: none;" title="Télécharcher une archive de ce dossier">
                                     <i class=" glyphicon glyphicon-download-alt"></i>
                                 </a>
+                                <a href="#myModalShareFolder<?php echo $k; ?>" title="Déplacer ce fichier" style="text-decoration: none;" data-toggle="modal" data-target="#myModalShareFolder<?php echo $k; ?>">
+                                    <i class="glyphicon glyphicon-share"></i>
+                                </a>
+                                <!-- Modal -->
+                                <div id="myModalShareFolder<?php echo $k; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $k; ?>" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Partage de dossier</h4>
+                                            </div>
+                                            <div class="modal-body">
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                <button type="submit" class="btn btn-primary">Partager</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <img alt="repertoire" src="/assets/ico/folder.png" />
                                 <a  href="?dir=<?php echo $urlFolder; ?>" style="vertical-align: middle; cursor: pointer"><?php echo normalizeString($element['nom']) ?></a>
                             </td>
-                            <td style="vertical-align: middle"><span>Dossier de fichiers</span></td>
+                            <td style="vertical-align: middle"><span>Dossier</span></td>
                             <td> </td>
                             <td> </td>
                             <?php
@@ -107,67 +128,49 @@ include 'includes/namesCheck.php';
                                     <i class="glyphicon glyphicon-remove"></i>
                                 </a>
                                 <!-- Modal -->
-                                <div id="myModalSuppr<?php echo $k; ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $k; ?>" aria-hidden="true">
-                                    <div class="modal-header">
-                                        <h3 id="myModalLabel<?php echo $k; ?>">Suppression de fichier</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="alert alert-danger">
-                                            <strong>Attention !</strong>
-                                            <p>Toute suppression est définitive, aucune restauration ne peut être effectée.</p>
+                                <div id="myModalSuppr<?php echo $k; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $k; ?>" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Suppression de fichier</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger">
+                                                    <strong>Attention !</strong>
+                                                    <p>Toute suppression est définitive, aucune restauration ne peut être effectée.</p>
+                                                </div>
+                                                <p>Confirmer la suppression du fichier <?php echo $element['nom.extension']; ?>.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                <a class="btn btn-danger" href='?a=remove&f=<?php echo $currentFolder . "/" . $element['nom.extension'];
+                                                ?>'>Supprimer</a>
+                                            </div>
                                         </div>
-                                        <p>Confirmer la suppression du fichier <?php echo $element['nom.extension']; ?>.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Annuler</button>
-                                        <a class="btn btn-danger" href='?a=remove&f=<?php echo $currentFolder . "/" . $element['nom.extension'];
-                                        ?>'>Supprimer</a>
                                     </div>
                                 </div>
-                                <script>
-                                    $('#myModalSuppr<?php echo $k; ?>').modal({
-                                        keyboard: false
-                                    });
-                                </script>
-                                <a href="#myModalDepl<?php echo $k; ?>" title="Déplacer ce fichier" data-toggle="modal" data-target="#myModalDepl<?php echo $k; ?>">
+                                <a href="#myModalShareFile<?php echo $k; ?>" title="Déplacer ce fichier" style="text-decoration: none;" data-toggle="modal" data-target="#myModalShareFile<?php echo $k; ?>">
                                     <i class="glyphicon glyphicon-share"></i>
                                 </a>
                                 <!-- Modal -->
-                                <div id="myModalDepl<?php echo $k; ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $k; ?>" aria-hidden="true">
-                                    <div class="modal-header">
-                                        <h3 id="myModalLabel<?php echo $k; ?>">Suppression de fichier</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form class="form-horizontal" action="" method="GET">
-                                            <input type="hidden" name="a" value="move">
-                                            <?php
-                                            if(isset($_GET['p'])){
-                                                $file = rawurldecode($_GET['p']) . '/' . $element['nom.extension'];
-                                            } else {
-                                                $file = 'documents/' . $element['nom.extension'];
-                                            }
-                                            ?>
-                                            <input type="hidden" name="f" value="<?php echo $file; ?>">
-                                            <div class="control-group">
-                                                <label class="control-label" for="d">Dossier de destination</label>
-                                                <div class="controls">
-                                                    <?
+                                <div id="myModalShareFile<?php echo $k; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $k; ?>" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Partage de fichier</h4>
+                                            </div>
+                                            <div class="modal-body">
 
-                                                    ?>
-                                                </div>
                                             </div>
-                                            <div class="form-actions">
+                                            <div class="modal-footer">
                                                 <button class="btn" data-dismiss="modal" aria-hidden="true">Annuler</button>
-                                                <button type="submit" class="btn btn-primary">Déplacer</button>
+                                                <button type="submit" class="btn btn-primary">Partager</button>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
-                                <script>
-                                    $('#myModalDepl<?php echo $k; ?>').modal({
-                                        keyboard: false
-                                    });
-                                </script>
                             </td>
                             <td>
                                 <?php
@@ -175,7 +178,7 @@ include 'includes/namesCheck.php';
                                     ?>
                                     <a data-toggle="lightbox" href="#Lightbox<?php echo $k; ?>">
                                         <img alt="image" src="/assets/ico/<?php echo strtolower($element['extension']) ?>.png" />
-                                        <?php echo shortenString(normalizeString($element['nom.extension']), 66) ?>
+                                        <?php echo shortenString(normalizeString($element['nom.extension']), 40) ?>
                                     </a>
                                     <!-- Lightbox -->
                                     <div id="Lightbox<?php echo $k; ?>" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
@@ -196,7 +199,7 @@ include 'includes/namesCheck.php';
                                     ?>
                                     <img alt="fichier" src="/assets/ico/<?php echo strtolower($element['extension']) ?>.png" />
                                     <a style="vertical-align: middle" href="./<?php echo $currentFolder."/".$element['nom.extension'] ; ?>">
-                                        <?php echo shortenString(normalizeString($element['nom']), 66) ?>
+                                        <?php echo shortenString(normalizeString($element['nom.extension']), 40) ?>
                                     </a>
                                 <?php
                                 }

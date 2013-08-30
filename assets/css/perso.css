@@ -161,3 +161,8 @@ body {
 .text-middle {
     vertical-align: middle;
 }
+
+#personalContent {
+    max-height: 88%;
+    overflow: auto;
+}

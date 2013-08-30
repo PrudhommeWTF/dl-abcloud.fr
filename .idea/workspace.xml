@@ -8,9 +8,9 @@
     <file path="/404.html" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377095168779" ignored="false" />
     <file path="/404.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377096410016" ignored="false" />
     <file path="/.htaccess" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377096990804" ignored="false" />
-    <file path="/register.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377161490402" ignored="false" />
+    <file path="/register.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377862711616" ignored="false" />
     <file path="/test-dir.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377163295621" ignored="false" />
-    <file path="/home.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377359568754" ignored="false" />
+    <file path="/home.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377870751106" ignored="false" />
     <file path="/header.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377361488163" ignored="false" />
     <file path="/profil.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377173170744" ignored="false" />
     <file path="/bootstrap-glyphicons.css" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377175545124" ignored="false" />
@@ -19,15 +19,16 @@
     <file path="/tmp.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377181015183" ignored="false" />
     <file path="/functions.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377357923001" ignored="false" />
     <file path="/config.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377243635178" ignored="false" />
-    <file path="/perso.css" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377421843012" ignored="false" />
-    <file path="/a.dummy" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377422382442" ignored="false" />
+    <file path="/perso.css" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377871086078" ignored="false" />
+    <file path="/a.dummy" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377868660409" ignored="false" />
     <file path="/logout.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377360239841" ignored="false" />
-    <file path="/upload.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377422078592" ignored="false" />
-    <file path="/footer.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377420311445" ignored="false" />
+    <file path="/upload.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377871338138" ignored="false" />
+    <file path="/footer.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377871187869" ignored="false" />
     <file path="/index.html" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377418639648" ignored="false" />
     <file path="/index.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377420266001" ignored="false" />
     <file path="/phpinfo.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377424102954" ignored="false" />
     <file path="/md5.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377450022991" ignored="false" />
+    <file path="/UploadHandler.php" changelist="7e4131b3-3067-40fc-b78d-9fe479f53d7c" time="1377854341649" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +48,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="7" selection-start="7580" selection-end="7580" vertical-scroll-proportion="-0.625">
+            <state line="114" column="9" selection-start="5213" selection-end="5213" vertical-scroll-proportion="0.15971394">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#script#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#script#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#script#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#script#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#script#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="8" selection-start="344" selection-end="344" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perso.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/perso.css">
+      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="1" selection-start="2689" selection-end="2689" vertical-scroll-proportion="1.0291878">
+            <state line="56" column="45" selection-start="2178" selection-end="2193" vertical-scroll-proportion="-20.625">
+              <folding>
+                <element signature="e#3388#3439#0" expanded="true" />
+                <element signature="e#3560#3590#0" expanded="true" />
+                <element signature="e#3869#3899#0" expanded="true" />
+                <element signature="e#5653#5700#0" expanded="true" />
+                <element signature="e#5818#5848#0" expanded="true" />
+                <element signature="e#6118#6169#0" expanded="true" />
+                <element signature="e#6276#6306#0" expanded="true" />
+                <element signature="e#6650#6680#0" expanded="true" />
+                <element signature="e#8909#8939#0" expanded="true" />
+                <element signature="e#11703#11748#0" expanded="true" />
+                <element signature="e#12403#12433#0" expanded="true" />
+                <element signature="e#12835#12865#0" expanded="true" />
+                <element signature="e#13036#13066#0" expanded="true" />
+                <element signature="e#13211#13241#0" expanded="true" />
+                <marker date="1377870774000" expanded="false" signature="1590:1611" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadHandler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cors/UploadHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="54" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
@@ -75,22 +117,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/user/profil.php" />
-        <option value="$PROJECT_DIR$/includes/functions.php" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/user/login.php" />
         <option value="$PROJECT_DIR$/user/logout.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/testUpload/index.html" />
         <option value="$PROJECT_DIR$/testUpload/index.php" />
-        <option value="$PROJECT_DIR$/includes/footer.php" />
-        <option value="$PROJECT_DIR$/upload.php" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/admin/phpinfo.php" />
         <option value="$PROJECT_DIR$/admin/md5.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/includes/functions.php" />
+        <option value="$PROJECT_DIR$/includes/config.php" />
+        <option value="$PROJECT_DIR$/cors/UploadHandler.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/assets/css/perso.css" />
+        <option value="$PROJECT_DIR$/includes/footer.php" />
+        <option value="$PROJECT_DIR$/upload.php" />
       </list>
     </option>
   </component>
@@ -126,7 +168,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -145,22 +186,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dl-abcloud.fr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dl-abcloud.fr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,11 +228,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/ico" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/cors" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/img" />
-      <recent name="$PROJECT_DIR$/directory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/tools" />
@@ -282,9 +310,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.097345136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.097345136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -295,7 +323,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.920354" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18971848" sideWeight="0.9026549" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19461444" sideWeight="0.670354" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -366,10 +394,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/css/perso.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="1" selection-start="2689" selection-end="2689" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#script#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#script#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -385,29 +427,113 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="174" selection-end="753" vertical-scroll-proportion="0.33450705" />
+        <state line="7" column="3" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13743456" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="7" selection-start="7580" selection-end="7580" vertical-scroll-proportion="-0.625">
+        <state line="99" column="47" selection-start="4179" selection-end="4179" vertical-scroll-proportion="0.8569726">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/includes/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="170" selection-end="170" vertical-scroll-proportion="0.13743456">
+        <state line="75" column="30" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.9119718">
+          <folding>
+            <marker date="1377865888000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1377865888000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="0" selection-start="4770" selection-end="4770" vertical-scroll-proportion="0.96478873">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cors/UploadHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="54" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="5" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.fileupload-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="44" selection-start="18947" selection-end="18947" vertical-scroll-proportion="0.42465752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="45" selection-start="2178" selection-end="2193" vertical-scroll-proportion="-20.625">
+          <folding>
+            <element signature="e#3388#3439#0" expanded="true" />
+            <element signature="e#3560#3590#0" expanded="true" />
+            <element signature="e#3869#3899#0" expanded="true" />
+            <element signature="e#5653#5700#0" expanded="true" />
+            <element signature="e#5818#5848#0" expanded="true" />
+            <element signature="e#6118#6169#0" expanded="true" />
+            <element signature="e#6276#6306#0" expanded="true" />
+            <element signature="e#6650#6680#0" expanded="true" />
+            <element signature="e#8909#8939#0" expanded="true" />
+            <element signature="e#11703#11748#0" expanded="true" />
+            <element signature="e#12403#12433#0" expanded="true" />
+            <element signature="e#12835#12865#0" expanded="true" />
+            <element signature="e#13036#13066#0" expanded="true" />
+            <element signature="e#13211#13241#0" expanded="true" />
+            <marker date="1377870774000" expanded="false" signature="1590:1611" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/perso.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="1" selection-start="2689" selection-end="2689" vertical-scroll-proportion="1.0291878">
+        <state line="165" column="18" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.94863015">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="344" selection-end="344" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="755" selection-end="755" vertical-scroll-proportion="0.29548088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="9" selection-start="5213" selection-end="5213" vertical-scroll-proportion="0.15971394">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#script#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#script#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#script#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

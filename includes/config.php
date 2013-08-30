@@ -19,7 +19,7 @@ $database = array(
     "server" => "localhost",
     "username" => "dev-dl",
     "password" => "ouvremoi",
-    "dbname" => "dl.abcloud.fr"
+    "dbname" => "dl_abcloud-fr"
 );
 
 // database server connection
@@ -63,5 +63,16 @@ $knownExt = array(
     'wmv' => 'Fichier WMV',
     'xls' => 'Microsoft Excel',
     'xlsx' => 'Microsoft Excel',
-    'zip' => 'Archive WinZip'
+    'zip' => 'Archive WinZip',
+    'torrent' => 'Fichier Torrent'
+);
+
+//  repertoires a ne pas montrer
+$t_repertoires_sensibles = array(
+    'thumbnail'
+);
+
+//  listing des fichiers a ne pas montrer
+$t_fichiers_sensibles = array(
+    '.htaccess'
 );

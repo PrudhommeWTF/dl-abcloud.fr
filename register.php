@@ -97,7 +97,7 @@ switch ($step) {
                 // send
                 mail($mail, $subject, $message, $headers);
                 //creat the private directory
-                $cmd = 'mkdir ./directory/' . $data->userUID;
+                $cmd = 'mkdir ./directory/' . $userUID;
                 $creatDirectory = exec($cmd);
             } else {
                 ?>

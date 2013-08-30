@@ -47,6 +47,11 @@ include 'includes/sessionCheck.php';
         </table>
     </form>
     <br>
+    <div class="alert alert-info">
+        <ul>
+            <li>Vous pouvez utiliser le "Drag & Drop" directement sur la page pour ajouter des fichiers à upload.</li>
+        </ul>
+    </div>
 </div>
 <!-- The template to display files available for upload -->
 <script id="template-upload" type="text/x-tmpl">
@@ -103,11 +108,7 @@ include 'includes/sessionCheck.php';
             <span class="size">{%=o.formatFileSize(file.size)%}</span>
         </td>
         <td style="vertical-align: middle">
-            <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-            <i class="glyphicon glyphicon-trash"></i>
-            <span>Supprimer</span>
-            </button>
-            <input type="checkbox" name="delete" value="1" class="toggle">
+            <a class="btn btn-success" disabled="disabled">Termnié</a>
         </td>
     </tr>
     {% } %}
@@ -146,8 +147,6 @@ include 'includes/sessionCheck.php';
 <hr>
 <!-- FOOTER -->
 <footer>
-    <p class="pull-right"><a href="#">Retour en haut</a></p>
-
     <p><?php echo $appName . ' ' . $version; ?> &copy; 2013 &middot; <a href="#">Privacy</a> &middot; <a
             href="#">Terms</a></p>
 </footer>

@@ -10,7 +10,13 @@
 <hr>
 <!-- FOOTER -->
 <footer>
-    <p class="pull-right"><a href="#">Retour en haut</a></p>
+    <?php
+    if($_SERVER['PHP_SELF'] == '/index.php'){
+        ?>
+        <p class="pull-right"><a href="#">Retour en haut</a></p>
+        <?php
+    }
+    ?>
 
     <p><?php echo $appName . ' ' . $version; ?> &copy; 2013 &middot; <a href="#">Privacy</a> &middot; <a
             href="#">Terms</a></p>

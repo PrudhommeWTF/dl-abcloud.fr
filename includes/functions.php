@@ -122,32 +122,52 @@ function formatSize($taille)
 
 }
 
-function listDir($repertoire_a_lister)
-{
+function listDir($repertoire_a_lister) {
 
-    if (false !== ($ressource = opendir($repertoire_a_lister))) {
+    global $t_repertoires_sensibles, $t_fichiers_sensibles, $orderby;
+    $t_repertoires = array();
+    $t_fichiers = array();
 
-        $t_repertoires = array();
-        $t_fichiers = array();
+    if (false !==($ressource = opendir($repertoire_a_lister))) {
 
-        while (false !== ($entree = readdir($ressource))) {
-            if (is_dir($repertoire_a_lister . "/" . $entree)) {
-                if (!preg_match("/^\./", $entree)) {
+        while (false !== ($entree = readdir($ressource)))  {
+
+            if( is_dir($repertoire_a_lister."/".$entree) ) {
+                if( !in_array($entree, $t_repertoires_sensibles) && !preg_match("/^\./", $entree) ) {
                     $t_repertoires[] = getInfos($repertoire_a_lister, $entree, 'repertoire');
                 }
-            } else {
-                $t_fichiers[] = getInfos($repertoire_a_lister, $entree, 'fichier');
             }
+            else {
+                if( !in_array($entree, $t_fichiers_sensibles) )
+                    $t_fichiers[] = getInfos($repertoire_a_lister, $entree, 'fichier');
+
+            }
+
         }
+
         // fusion des 2 tableaux pour affichage
         $liste_du_repertoire = array_merge($t_repertoires, $t_fichiers);
 
         closedir($ressource);
-    }
 
+    }
     //else die("pas de ressources");
+
     return $liste_du_repertoire;
 
 }
 
-?>
+function redirect($location) {
+
+    if (!headers_sent()) {
+        header("Location: " . $location);
+    }
+    else { ?>
+        <script>
+            document.location.href='<?php echo $location ?>';
+        </script>
+    <?php }
+
+    die();
+
+}
